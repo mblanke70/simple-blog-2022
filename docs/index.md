@@ -10,7 +10,7 @@ In diesem Projekt entsteht eine einfache Blog-Webseite. Es dient der Einführung
 4. In VS Code github Erweiterung installieren
 
 ### Folge 1: Home-Template integrieren
-Wir nutzen ein statische Bootstrap-Templates von der Seite [startbootstrap.com](startbootstrap.com). Diese werden im Folgenden in unsere Laravel-Projekt integriert.
+Wir nutzen statische Bootstrap-Templates von der Seite [startbootstrap.com](startbootstrap.com). Diese werden im Folgenden in unser Laravel-Projekt integriert.
 
 1. [Blog-Home](https://startbootstrap.com/template/blog-home)
 2. [Blog-Post](https://startbootstrap.com/template/blog-post)
@@ -182,9 +182,60 @@ Die ausgelagerten Bereiche werden in einer neuen View resources/home.blade.php u
         <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
     </div>
 @stop
- 
-```        
+```
 
+Bleibt noch die Integration der anderen statischen HTML-Seite für die Ansicht eines Posts. Wir erstellen einfach eine Kopie der View home.blade.php und ersetzen dann den content-Bereich durch den HTML-Code, der für die Deatil-Ansicht eines Posts zuständig ist.
+
+```blade
+@extends('layouts.app')
+ 
+@section('content')
+   
+@stop
+
+@section('sidebar')
+    <!-- Search widget-->
+    <div class="card mb-4">
+        <div class="card-header">Search</div>
+        <div class="card-body">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Categories widget-->
+    <div class="card mb-4">
+        <div class="card-header">Categories</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!">Web Design</a></li>
+                        <li><a href="#!">HTML</a></li>
+                        <li><a href="#!">Freebies</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!">JavaScript</a></li>
+                        <li><a href="#!">CSS</a></li>
+                        <li><a href="#!">Tutorials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Side widget-->
+    <div class="card mb-4">
+        <div class="card-header">Side Widget</div>
+        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+    </div>
+@stop
+
+```
 
 # Header 1
 ## Header 2
