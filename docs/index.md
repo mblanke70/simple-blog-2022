@@ -14,7 +14,7 @@ In diesem Projekt entsteht eine einfache Blog-Webseite. Es dient der Einführung
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
-#### Laravel aus dem GitHub Repository klonen
+#### Laravel-Projekt-Vorlage aus dem GitHub Repository klonen
 6. Repository klonen, Speicherort `C:\Laragon\www`
 7. Auf der Console im Projekt-Ordner `composer install` ausführen
 8. `.env.example` umbenennen in `.env`, Datenbankename in `.env` ändern in `simple-blog`
