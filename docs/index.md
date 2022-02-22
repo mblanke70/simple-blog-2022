@@ -8,6 +8,8 @@ In diesem Projekt entsteht eine einfache Blog-Webseite. Es dient der Einführung
 2. [Laragon](https://laragon.org/download/index.html) installieren
 3. [Visual Studio Code](https://code.visualstudio.com/download) installieren
 4. In VS Code github Erweiterung installieren
+5. git konfigurieren (Name, Email)
+6. Repository klonen, Speicherort `C:\Laragon\www`
 
 ### Folge 1: Home-Template integrieren
 Wir nutzen statische Bootstrap-Templates von der Seite [startbootstrap.com](startbootstrap.com). Diese werden im Folgenden in unser Laravel-Projekt integriert.
@@ -184,7 +186,7 @@ Die ausgelagerten Bereiche werden in einer neuen View resources/home.blade.php u
 @stop
 ```
 
-Bleibt noch die Integration der anderen statischen HTML-Seite für die Detail-Ansicht eines Posts. Wir erstellen einfach eine Kopie der View `resources/views/home.blade.php` und ersetzen dann den content-Bereich durch den HTML-Code, der für die Detail-Ansicht eines Posts zuständig ist.
+Bleibt noch die Integration der anderen statischen HTML-Seite für die Detail-Ansicht eines Posts in Form der View `resources/views/post.blade.php`. Wir erstellen einfach eine Kopie der View `resources/views/home.blade.php` und ersetzen dann den content-Bereich durch den HTML-Code, der für die Detail-Ansicht eines Posts zuständig ist.
 
 ```blade
 @extends('layouts.app')
@@ -236,6 +238,8 @@ Bleibt noch die Integration der anderen statischen HTML-Seite für die Detail-An
 @stop
 
 ```
+
+In `web.php` muss natürlich eine Route ergänzt werden, so dass wir die neue View auch im Browser aufrufen können.
 
 # Header 1
 ## Header 2
