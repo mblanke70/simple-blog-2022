@@ -19,7 +19,7 @@ $ git config --global user.email johndoe@example.com
 9. Application Key erzeugen: `php artisan key:generate`
 
 ### Folge 1: Home-Template integrieren
-Wir nutzen statische Bootstrap-Templates von der Seite [startbootstrap.com](startbootstrap.com). Diese werden im Folgenden in unser Laravel-Projekt integriert.
+Wir nutzen statische Bootstrap-Templates von der Seite [startbootstrap.com](https://startbootstrap.com/). Diese werden im Folgenden in unser Laravel-Projekt integriert.
 
 1. [Blog-Home](https://startbootstrap.com/template/blog-home)
 2. [Blog-Post](https://startbootstrap.com/template/blog-post)
