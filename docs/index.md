@@ -15,7 +15,7 @@ Wir nutzen statische Bootstrap-Templates von der Seite [startbootstrap.com](star
 1. [Blog-Home](https://startbootstrap.com/template/blog-home)
 2. [Blog-Post](https://startbootstrap.com/template/blog-post)
 
-Den Body von Blog-Home kopieren wir nach resources/layouts/app.blade.php und ersetzen dabei den vorhandenen Body. Seitenkopf, Navigation und Footer bleiben unverändert, der Hauptinhaltsbereich sowie die Sidebar werden ausgelagert und mit Hilfeder @yield Direktive verknüpft.
+Den Body von Blog-Home kopieren wir nach `resources/layouts/app.blade.php` und ersetzen dabei den vorhandenen Body. Seitenkopf, Navigation und Footer bleiben unverändert, der Hauptinhaltsbereich sowie die Sidebar werden ausgelagert und mit Hilfeder `@yield` Direktive verknüpft.
 
 ```blade
 <!-- Responsive navbar-->
@@ -63,7 +63,7 @@ Den Body von Blog-Home kopieren wir nach resources/layouts/app.blade.php und ers
     <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
 </footer>
 ```        
-Die ausgelagerten Bereiche werden in einer neuen View resources/home.blade.php untergebracht. Diese View ist mit der übergeordneten View layouts/app.blade.php verknüpft (@extends). Im Weiteren werden der content-Bereich und der sidebar-Bereich definiert (siehe @yield Direktive oben).
+Die ausgelagerten Bereiche werden in einer neuen View resources/home.blade.php untergebracht. Diese View ist mit der übergeordneten View `resources/layouts/app.blade.php` verknüpft (`@extends`). Im Weiteren werden der content-Bereich und der sidebar-Bereich definiert (siehe `@yield` Direktive oben).
 
 ```blade
 @extends('layouts.app')
@@ -184,7 +184,7 @@ Die ausgelagerten Bereiche werden in einer neuen View resources/home.blade.php u
 @stop
 ```
 
-Bleibt noch die Integration der anderen statischen HTML-Seite für die Ansicht eines Posts. Wir erstellen einfach eine Kopie der View home.blade.php und ersetzen dann den content-Bereich durch den HTML-Code, der für die Deatil-Ansicht eines Posts zuständig ist.
+Bleibt noch die Integration der anderen statischen HTML-Seite für die Ansicht eines Posts. Wir erstellen einfach eine Kopie der View `resources/views/home.blade.php` und ersetzen dann den content-Bereich durch den HTML-Code, der für die Deatil-Ansicht eines Posts zuständig ist.
 
 ```blade
 @extends('layouts.app')
