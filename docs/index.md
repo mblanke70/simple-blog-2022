@@ -17,7 +17,7 @@ Wir nutzen ein statische Bootstrap-Templates von der Seite [startbootstrap.com](
 
 Den Body von Blog-Home kopieren wir nach resources/layouts/app.blade.php und ersetzen dabei den vorhandenen Body. Seitenkopf, Navigation und Footer bleiben unverändert, der Hauptinhaltsbereich sowie die Sidebar werden ausgelagert und mit Hilfeder @yield Direktive verknüpft.
 
-```markdown
+```Blade
 <!-- Responsive navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
@@ -65,7 +65,7 @@ Den Body von Blog-Home kopieren wir nach resources/layouts/app.blade.php und ers
 ```        
 Die ausgelagerten Bereiche werden in einer neuen View resources/home.blade.php untergebracht. Diese View ist mit der übergeordneten View layouts/app.blade.php verknüpft (@extends). Im Weiteren werden der content-Bereich und der sidebar-Bereich definiert (siehe @yield Direktive oben).
 
-```
+```Blade
 @extends('layouts.app')
  
 @section('content')
