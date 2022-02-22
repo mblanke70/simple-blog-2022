@@ -4,6 +4,8 @@ In diesem Projekt entsteht eine einfache Blog-Webseite. Es dient der Einführung
 
 ### Folge 0: Vorbereitungen
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZYEig9CtOfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Entwicklungsumgebung einrichten
 1. [git](https://git-scm.com/download/win) installieren
 2. [Laragon](https://laragon.org/download/index.html) installieren
