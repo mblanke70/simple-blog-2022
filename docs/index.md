@@ -14,8 +14,8 @@ $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
 6. Repository klonen, Speicherort `C:\Laragon\www`
-7. Auf der Console: `composer install`
-8. `.env.example` umbenennen in `.env`, Datenbankename ändern in `simple-blog`
+7. Auf der Console im Projekt-Ordner `composer install` ausführen
+8. `.env.example` umbenennen in `.env`, Datenbankename in `.env` ändern in `simple-blog`
 9. Application Key erzeugen: `php artisan key:generate`
 
 ### Folge 1: Home-Template integrieren
