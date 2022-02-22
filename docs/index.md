@@ -10,6 +10,9 @@ In diesem Projekt entsteht eine einfache Blog-Webseite. Es dient der Einführung
 4. In VS Code github Erweiterung installieren
 5. git konfigurieren (Name, Email)
 6. Repository klonen, Speicherort `C:\Laragon\www`
+7. Auf der Console: `composer install`
+8. `.env.example` umbenennen in `.env`, Datenbankename ändern in `simple-blog`
+9. Application Key erzeugen: `php artisan key:generate`
 
 ### Folge 1: Home-Template integrieren
 Wir nutzen statische Bootstrap-Templates von der Seite [startbootstrap.com](startbootstrap.com). Diese werden im Folgenden in unser Laravel-Projekt integriert.
