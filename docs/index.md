@@ -4,6 +4,7 @@ In diesem Projekt entsteht eine einfache Blog-Webseite. Es dient der Einführung
 
 ### Folge 0: Vorbereitungen
 
+#### Entwicklungsumgebung einrichten
 1. [git](https://git-scm.com/download/win) installieren
 2. [Laragon](https://laragon.org/download/index.html) installieren
 3. [Visual Studio Code](https://code.visualstudio.com/download) installieren
@@ -13,14 +14,13 @@ In diesem Projekt entsteht eine einfache Blog-Webseite. Es dient der Einführung
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
+#### Laravel aus dem GitHub Repository klonen
 6. Repository klonen, Speicherort `C:\Laragon\www`
 7. Auf der Console im Projekt-Ordner `composer install` ausführen
 8. `.env.example` umbenennen in `.env`, Datenbankename in `.env` ändern in `simple-blog`
 9. Application Key erzeugen: `php artisan key:generate`
 
 ### Folge 1: Home-Template integrieren
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CRYnLoFGd24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Wir nutzen statische Bootstrap-Templates von der Seite [startbootstrap.com](https://startbootstrap.com/). Diese werden im Folgenden in unser Laravel-Projekt integriert.
 
