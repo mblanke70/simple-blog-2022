@@ -5,8 +5,8 @@ You can use the [editor on GitHub](https://github.com/mblanke70/simple-blog-2022
 ### 0. Vorbereitungen
 
 1. [git](https://git-scm.com/download/win) installieren
-2. [Laragon] (https://laragon.org/download/index.html) installieren
-3. [Visual Studio Code] (https://code.visualstudio.com/download) installieren
+2. [Laragon](https://laragon.org/download/index.html) installieren
+3. [Visual Studio Code](https://code.visualstudio.com/download) installieren
 4. In VS Code github Erweiterung installieren
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
