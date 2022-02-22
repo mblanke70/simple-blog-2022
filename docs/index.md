@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Home
 ---
 
 ## Simple Blog 2022
