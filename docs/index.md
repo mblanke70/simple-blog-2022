@@ -7,8 +7,12 @@ In diesem Projekt entsteht eine einfache Blog-Webseite. Es dient der Einführung
 1. [git](https://git-scm.com/download/win) installieren
 2. [Laragon](https://laragon.org/download/index.html) installieren
 3. [Visual Studio Code](https://code.visualstudio.com/download) installieren
-4. In VS Code github Erweiterung installieren
-5. git konfigurieren (Name, Email)
+4. In VS Code Erweiterung [GitHub Pull Requests and Issues](https://code.visualstudio.com/docs/editor/github) installieren
+5. git muss vor der ersten Verwendung konfiguriert werden (Name, Email)
+```
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
 6. Repository klonen, Speicherort `C:\Laragon\www`
 7. Auf der Console: `composer install`
 8. `.env.example` umbenennen in `.env`, Datenbankename ändern in `simple-blog`
