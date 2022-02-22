@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Simple Blog 2022
 
 You can use the [editor on GitHub](https://github.com/mblanke70/simple-blog-2022/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
