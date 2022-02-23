@@ -1,2 +1,5 @@
 remote-theme: poole-lanyon
-highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
