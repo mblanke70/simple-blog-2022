@@ -38,7 +38,7 @@ Wir nutzen statische Bootstrap-Templates von der Seite [startbootstrap.com](http
 
 Den Body von Blog-Home kopieren wir nach `resources/layouts/app.blade.php` und ersetzen dabei den vorhandenen Body. Seitenkopf, Navigation und Footer bleiben unverändert, der Hauptinhaltsbereich sowie die Sidebar werden ausgelagert und mit Hilfeder `@yield` Direktive verknüpft.
 
-```markdown
+```blade
 <!-- Responsive navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
