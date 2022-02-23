@@ -271,5 +271,3 @@ In `web.php` muss natürlich eine Route ergänzt werden, so dass wir die neue Vi
 2. List
 
 **Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
