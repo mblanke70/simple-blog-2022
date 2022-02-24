@@ -1,3 +1,4 @@
+
 ## Simple Blog 2022
 
 In diesem Projekt entsteht eine einfache Blog-Webseite. Es dient der Einführung in Laravel.
