@@ -1,3 +1,7 @@
+---
+layout: page
+title: Folge 0
+---
 
 ## Simple Blog 2022
 
