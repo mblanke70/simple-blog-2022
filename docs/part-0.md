@@ -86,7 +86,7 @@ Den Body von Blog-Home kopieren wir nach `resources/layouts/app.blade.php` und e
 ```        
 Die ausgelagerten Bereiche werden in einer neuen View resources/home.blade.php untergebracht. Diese View ist mit der übergeordneten View `resources/layouts/app.blade.php` verknüpft (`@extends`). Im Weiteren werden der content-Bereich und der sidebar-Bereich definiert (siehe `@yield` Direktive oben).
 
-```blade
+```
 @extends('layouts.app')
  
 @section('content')
@@ -207,7 +207,7 @@ Die ausgelagerten Bereiche werden in einer neuen View resources/home.blade.php u
 
 Bleibt noch die Integration der anderen statischen HTML-Seite für die Detail-Ansicht eines Posts in Form der View `resources/views/post.blade.php`. Wir erstellen einfach eine Kopie der View `resources/views/home.blade.php` und ersetzen dann den content-Bereich durch den HTML-Code, der für die Detail-Ansicht eines Posts zuständig ist.
 
-```blade
+```
 @extends('layouts.app')
  
 @section('content')
